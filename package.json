@@ -1,0 +1,16 @@
+{
+  "name": "shaffof-nasiya",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telefon do'konlari uchun raqamli nasiya daftari: MongoDB, Telegram bot, statistika",
+  "scripts": {
+  "dev": "node api/index.js"
+}
+,
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0"
+  },
+  "engines": { "node": ">=18" }
+}
