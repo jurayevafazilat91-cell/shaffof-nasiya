@@ -29,8 +29,9 @@ export default async function statsPage(el, _p, ctx, id) {
       <article class="db-box spot" id="cash">${cashMarkup()}</article>
       <article class="db-box">
         <div class="db-bh"><h2>Oylik reja</h2></div>
-        ${gauge(curPct, `${monthName(cur.month)}: rejadan yig‘ildi`)}
-        <p class="cash-note center">Kutilgan ${num(cur.expected)} so‘mdan ${num(cur.collected)} so‘m yig‘ildi</p>
+        ${cur.expected ? `${gauge(curPct, `${monthName(cur.month)}: rejadan yig‘ildi`)}
+        <p class="cash-note center">Kutilgan ${num(cur.expected)} so‘mdan ${num(cur.collected)} so‘m yig‘ildi</p>`
+    : `<div class="empty sm">${icon('clock')}<p>${monthName(cur.month)} oyiga reja yo‘q.</p></div>`}
       </article>
     </section>
 

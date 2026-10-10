@@ -72,7 +72,7 @@ export default async function dashboard(el, _p, ctx, id) {
       </article>
       <article class="db-box">
         <div class="db-bh"><h2>Oylik reja</h2><a class="db-link" href="#/statistika">Statistika →</a></div>
-        ${gauge(curPct > 100 ? 100 : curPct, 'shu oy rejadan yig‘ildi')}
+        ${cur.expected ? gauge(curPct > 100 ? 100 : curPct, 'shu oy rejadan yig‘ildi') : `<div class="empty sm">${icon('clock')}<p>Bu oyga reja yo‘q.</p></div>`}
         ${st.topModels.length ? `<ol class="db-models">${st.topModels.slice(0, 3).map((m, i) => `<li><span>${i + 1}</span><b>${esc(m.name)}</b><em>${m.count} ta</em></li>`).join('')}</ol>` : ''}
       </article>
     </section>
