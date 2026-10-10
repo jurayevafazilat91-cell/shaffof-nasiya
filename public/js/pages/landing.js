@@ -6,7 +6,7 @@ import { logoMark } from '../app.js';
 export default function landing(el) {
   const logged = Boolean(auth.token);
   const start = logged ? '#/panel' : '#/royxat';
-  const startTxt = logged ? 'Panelga o‘tish' : 'Bepul boshlash';
+  const startTxt = logged ? 'Panelga o‘tish' : 'Ro‘yxatdan o‘tish';
 
   el.innerHTML = `
   <div class="land">
@@ -149,13 +149,13 @@ export default function landing(el) {
       <div class="plans">
         <article class="plan hot reveal spot">
           <h3>Boshlang‘ich</h3><p class="plan-d">Bitta sotuvchi va kichik do‘kon uchun.</p>
-          <p class="pp"><b>0</b> so‘m / oy</p>
+          <p class="pp"><b>99$</b> / oy</p>
           <a class="btn light block" href="${start}">Boshlash</a>
           <ul><li>${icon('check')} 30 tagacha faol nasiya</li><li>${icon('check')} Telegram hisobotlar</li><li>${icon('check')} Statistika va grafiklar</li><li>${icon('check')} Mijoz sahifasi va QR</li></ul>
         </article>
         <article class="plan reveal d1 spot">
           <h3>Pro</h3><p class="plan-d">Faol savdo qiladigan do‘konlar uchun.</p>
-          <p class="pp"><b>99 000</b> so‘m / oy</p>
+          <p class="pp"><b>199$</b> / oy</p>
           <a class="btn ghost-line block" href="${start}">Pro’ni sinash</a>
           <ul><li>${icon('check')} Cheksiz nasiya</li><li>${icon('check')} Mijozlarga avtomatik eslatma</li><li>${icon('check')} Excel eksport</li><li>${icon('check')} Bir nechta sotuvchi (tez orada)</li></ul>
         </article>
