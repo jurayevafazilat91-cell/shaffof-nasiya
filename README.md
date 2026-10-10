@@ -73,9 +73,10 @@ lib/db.js            MongoDB ulanishi
 
 ```
 npm install
-npx vercel dev
+npm run dev
 ```
-`.env` o‘rniga `npx vercel env pull .env.local` bilan Vercel’dagi o‘zgaruvchilarni yuklab olish mumkin.
+`.env` faylini `.env.example` asosida yarating (lokal MongoDB uchun `MONGODB_URI=mongodb://127.0.0.1:27017`). Sayt: http://localhost:3000.
+Vercel muhitining o‘zida tekshirish uchun: `npx vercel dev` (Vercel akkaunti kerak).
 
 ## Cheklovlar va keyingi bosqich
 

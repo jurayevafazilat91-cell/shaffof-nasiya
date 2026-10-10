@@ -4,7 +4,7 @@
   "private": true,
   "description": "Telefon do'konlari uchun raqamli nasiya daftari: MongoDB, Telegram bot, statistika",
   "scripts": {
-  "dev": "node api/index.js"
+  "dev": "node --env-file=.env dev-server.js"
 }
 ,
   "dependencies": {
