@@ -149,7 +149,7 @@ export default function landing(el) {
       <div class="plans">
         <article class="plan hot reveal spot">
           <h3>Boshlang‘ich</h3><p class="plan-d">Bitta sotuvchi va kichik do‘kon uchun.</p>
-          <p class="pp"><b>Tekin</b></p>
+          <p class="pp"><b>Bepul</b></p>
           <a class="btn light block" href="${start}">Boshlash</a>
           <ul><li>${icon('check')} 30 tagacha faol nasiya</li><li>${icon('check')} Telegram hisobotlar</li><li>${icon('check')} Statistika va grafiklar</li><li>${icon('check')} Mijoz sahifasi va QR</li></ul>
         </article>
